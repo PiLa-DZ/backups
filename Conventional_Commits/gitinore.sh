@@ -46,7 +46,7 @@ git commit -m "chore: switch to es modules"
 # For Testing
 
 # Creating the file for the first time
-git commit -m "test: add manual test suite for task logic"
+git commit -m "test: add manual test for task logic"
 # "Adding tests for the ""Add"" command"
 git commit -m "test(commands): add unit tests for task creation"
 # Testing edge cases (empty inputs)
