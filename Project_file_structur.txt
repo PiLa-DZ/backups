@@ -1,0 +1,12 @@
+package.json – Stores project information and dependencies.
+node_modules/ – Contains installed npm packages.
+app.js / server.js – Main entry point of the application.
+routes/ – Contains all route files.
+controllers/ – Handles request logic.
+models/ – Defines database schema / structure.
+middlewares/ – Custom middleware functions.
+config/ – Database and environment configuration.
+public/ – Static files (CSS, JS, images).
+views/ – Templates (EJS, Pug, Handlebars).
+.env – Environment variables.
+.gitignore – Files ignored by git.
