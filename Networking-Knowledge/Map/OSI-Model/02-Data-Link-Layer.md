@@ -5,7 +5,7 @@
 - Media Access Control & Collision Avoidance
 - Hardware: The Network Switch
 - The Two Sublayers:
-  - **LLC (Logical Link Control):** (IPv4 or IPv6) --> Layer 3
+  - **LLC (Logical Link Control):** (IPv4 or IPv6) <-- Layer 3
   - **MAC (Media Access Control):** (appends the hardware MAC addresses to the frame) --> Layer 1
 
 > [!NOTE] ARP (Address Resolution Protocol)
