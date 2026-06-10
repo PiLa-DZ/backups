@@ -1,3 +1,61 @@
+# The original network engineers in 1971 designed it this way
+
+---
+
+## 1. Why Separate the Commands from the Data?
+
+Imagine a network cable back in the 1970s or 1980s.
+Bandwidth was incredibly tiny.
+If you wanted to download a massive 50MB} file,
+it could take hours.
+
+If everything ran on **one single pipe** (like HTTP does),
+the moment you started downloading that file,
+that pipe would be 100% full of raw file bits.
+
+- What if you realized 5 minutes in that you clicked the wrong file
+  and wanted to cancel? You couldn't.
+  You couldn't send a "STOP" command
+  because the pipe was choked full of the file data.
+  You would have to physically unplug your network cable.
+
+- What if you wanted to check how many bytes were left while it was downloading?
+  You couldn't ask the server, because the server was busy blasting file bytes.
+
+By creating **two separate channels**, FTP solves this:
+
+1. **The Command Channel**
+   stays completely clear and lightweight.
+   It passes tiny text strings like `USER` and `QUIT`.
+   Even if a huge file is transferring on the other channel,
+   the command channel is wide awake,
+   listening for you to type `ABOR` (Abort) to kill the transfer instantly.
+
+2. **The Data Channel**
+   acts like a temporary workforce.
+   It turns on, burns maximum network bandwidth to dump the raw file bytes
+   directly into your file system, and disappears the second the file is done.
+
+---
+
+## 2. Let's Build the Real Deal: Transferring a File
+
+To make our Node.js server transfer files,
+we have to implement the **`PASV` (Passive Mode)** command.
+
+When the client types `ls`
+or tries to download/upload a file,
+it sends `PASV` down the Command Channel.
+Our server must respond by spinning up a _brand new, temporary TCP server_
+on a random port and telling the client:
+_"Hey, go connect to this new secret port to get your file data."_
+
+### Updated `ftp-server.js` (With Real File Reading!)
+
+Update your server code to handle the `PASV`
+logic and the `RETR` (Retrieve/Download file) command:
+
+```javascript
 import net from "net";
 import fs from "fs";
 import path from "path";
@@ -135,3 +193,38 @@ const server = net.createServer((commandSocket) => {
 server.listen(2121, () => {
   console.log("🚀 Real FTP Server running on port 2121...");
 });
+```
+
+---
+
+## 3. Let's Test Moving a Real File
+
+1. On your Server machine (`192.168.0.199`),
+   create a dummy text file inside your script folder called `secret.txt`:
+
+```bash
+echo "This text traveled over a custom JavaScript Layer 4 FTP Data Channel!" > secret.txt
+
+```
+
+1. Start your updated server: `node ftp-server.js`
+2. Go to your client Arch computer (`192.168.0.108`) and log in:
+
+```bash
+ftp -p 192.168.0.199 2121
+
+```
+
+1. Log in with `nabil` and `archlinux`.
+2. Now, download your file using the standard FTP download command **`get`**:
+
+```text
+ftp> get secret.txt
+
+```
+
+### Watch the output
+
+Your client terminal will show a beautiful progress update confirming bytes were transferred, and your server terminal will log the exact moment the second, temporary data socket port ignited in memory to push the raw file stream out before shutting itself down!
+
+Exit the ftp client, run `cat secret.txt` on your client machine, and read your successfully transferred file. You just fully implemented a multi-channel enterprise application protocol with your own hands!
