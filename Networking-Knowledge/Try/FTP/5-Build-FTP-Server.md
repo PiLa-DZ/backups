@@ -203,7 +203,7 @@ server.listen(2121, () => {
    create a dummy text file inside your script folder called `secret.txt`:
 
 ```bash
-echo "This text traveled over a custom JavaScript Layer 4 FTP Data Channel!" > secret.txt
+echo "This text traveled over a custom JavaScript Layer 4 FTP Data Channel" > secret.txt
 
 ```
 
@@ -225,6 +225,12 @@ ftp> get secret.txt
 
 ### Watch the output
 
-Your client terminal will show a beautiful progress update confirming bytes were transferred, and your server terminal will log the exact moment the second, temporary data socket port ignited in memory to push the raw file stream out before shutting itself down!
+Your client terminal will show a beautiful progress update confirming bytes were transferred,
+and your server terminal will log the exact moment the second,
+temporary data socket port ignited in memory
+to push the raw file stream out before shutting itself down!
 
-Exit the ftp client, run `cat secret.txt` on your client machine, and read your successfully transferred file. You just fully implemented a multi-channel enterprise application protocol with your own hands!
+Exit the ftp client,
+run `cat secret.txt` on your client machine,
+and read your successfully transferred file.
+You just fully implemented a multi-channel enterprise application protocol with your own hands!
