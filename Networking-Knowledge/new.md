@@ -1,6 +1,6 @@
 # new
 
-- 1. FTP (File Transfer Protocol)
+- FTP (File Transfer Protocol)
   - Ancient routers, embedded devices, old backups.
   - **The Port:** `21`
   - dual-channel protocol
@@ -8,7 +8,7 @@
     - 1. spins up random temporary TCP sockets to transfer actual file bytes
   - Anyone sniffing your local Wi-Fi with Wireshark can steal your passwords instantly
 
-- 1. SFTP (SSH File Transfer Protocol)
+- SFTP (SSH File Transfer Protocol)
   - System administration and securely managing Linux servers.
   - **The Port:** `22`
   - SFTP is a completely different animal.
@@ -19,7 +19,7 @@
   - handles everything over a single port
   -
 
-- 1. SMB (Server Message Block): Live stream
+- SMB (Server Message Block): Live stream
   - Sharing folders between Windows, Mac, and Linux locally.
   - **The Port:** `445`
   - SMB was originally created by Microsoft
@@ -30,7 +30,7 @@
   - NAS (Network Attached Storage) systems
   - Windows and Linux machines share shared drives seamlessly
 
-- 1. WebDAV (Web Distributed Authoring and Versioning)
+- WebDAV (Web Distributed Authoring and Versioning)
   - Cloud storage synchronization services (like Nextcloud)
   - **The Port:** `80` or `443`
   - WebDAV is an extension of the **HTTP protocol**.
