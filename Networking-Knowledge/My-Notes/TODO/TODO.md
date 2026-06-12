@@ -1,7 +1,19 @@
-# Action Plan: How to Learn This as a Dev
+- Data Link Layer
+  - MAC (Media Access Control) MAC address
+  - LLC (Logical Link Control) IP address
 
-Instead of just reading textbooks,
-use your existing environment to experiment:
+- Network Layer
+  - Routing: `Destination IP address` --> `Routing Table` --> `the next router`
+  - Hardware Router: `local network (LAN)` <--> `outside world (WAN)`
+
+- Transport Layer
+  - `TCP` (Transmission Control Protocol) – "Reliable & Ordered":
+  - `UDP` (User Datagram Protocol) – "Fast & Unreliable"
+
+- Presentation Layer
+  - Data Encryption & Decryption: `SSL/TLS (Secure Sockets Layer / Transport Layer Security)`
+
+## TODO
 
 1. **Inspect Live Traffic:**
    Since you are comfortable with Linux and the CLI,

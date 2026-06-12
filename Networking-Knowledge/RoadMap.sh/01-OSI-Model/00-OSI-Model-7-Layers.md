@@ -1,12 +1,12 @@
 # The 7 Layers: From Code to Copper
 
-- Layer 7: Application Layer
-- Layer 6: Presentation Layer
-- Layer 5: Session Layer
-- Layer 4: Transport Layer
-- Layer 3: Network Layer
-- Layer 2: Data Link Layer
 - Layer 1: Physical Layer
+- Layer 2: Data Link Layer
+- Layer 3: Network Layer
+- Layer 4: Transport Layer
+- Layer 5: Session Layer
+- Layer 6: Presentation Layer
+- Layer 7: Application Layer
 
 ---
 
