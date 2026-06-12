@@ -1,0 +1,5 @@
+- SSL `Secure Sockets Layer`
+- TLS `Transport Layer Security`
+  - **The Goal**: Encrypting the pipe
+  - Asymmetric encryption vs Symmetric encryption
+  - `Connection: keep-alive`
