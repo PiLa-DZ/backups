@@ -1,0 +1,20 @@
+# IP `Internet Protocol`
+
+IP functions similarly to a postal service.
+When users send and receive data from their devices,
+the data gets spliced into packets.
+
+- Packets are like letters with two IP addresses:
+  - one for the sender
+  - one for the recipient.
+
+After the packet leaves the sender,
+it goes to a gateway or router, similar to a post office,
+which guides it toward its destination.
+Packets continue to travel through several gateways
+until they reach their destinations.
+
+IP is commonly paired with TCP to ensure reliable data delivery.
+IP sends packets to their destinations as they arrive,
+while TCP makes sure they are in the correct sequence since IP is connectionless
+and can deliver them out of order if they take different routes across the network.
