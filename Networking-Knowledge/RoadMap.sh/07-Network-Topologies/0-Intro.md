@@ -1,5 +1,13 @@
 # Network Topologies
 
+- Network Topologies
+  - Star Topology: The Modern King `99%`
+  - Ring Topology: The Circular Token Pass
+  - Mesh Topology: The Bulletproof Web
+  - Bus Topology: The Shared Wire (and the Textbook Misdirection)
+  - Hybrid Topology
+  - Global Internet Shape
+
 A network topology is just the
 **blueprint or shape of how you arrange the physical cables and devices in a room.**
 As a backend engineer or security analyst,
