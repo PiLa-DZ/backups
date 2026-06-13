@@ -2,6 +2,12 @@ I don't understand any of this list so let's step by step understand what is thi
 i think i have many things to learn but i don't know where to start
 please help me all this concepts is new for me
 
+Chain of Trust
+HTTPS certificate
+completely private connection between your browser and the server
+encrypted, highly secure connection
+Domain Validation (DV)
+
 1. The Chain of Trust
 2. Digital Certificate
 3. Certificate Authority (CA)
