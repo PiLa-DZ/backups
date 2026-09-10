@@ -1,0 +1,29 @@
+- TECH
+  - [x] JavaScript `Programming Language` (Raodmap)
+  - [x] Node.js `JavaScript runtime environment` (Raodmap)
+  - [x] NPM `Node Package Manager`
+  - [x] FNM `Fast Node Manager`
+  - [x] TypeScript `Super set of JavaScript` (Raodmap)
+  - Modules
+    - [x] Express `Web Application Framework`
+    - [x] Prisma `ORM | Object-Relational Mapping & Migrations`
+    - [x] Vitest `Next Generation Testing Framework`
+    - [x] Supertest `HTTP Testing`
+    - [x] Zod `TypeScript-first validation library`
+    - [ ] Winston `Log Records`
+    - [ ] swagger-ui-express `Swagger-ui generated API docs`
+    - [ ] Eslint `patterns found in ECMAScript/JavaScript`
+    - [ ] Redis `Caching`
+    - [ ] Helmet `Content Security Policy`
+    - [ ] CORS `Cross-Origin Resource Sharing`
+    - [x] JWT `JSON Web Woken`
+    - [x] Tsx `TypeScript Execute`
+    - [x] Tsc `Compiler`
+    - [x] Dotenv `loads environment variables`
+    - [x] Bcrypt `hash passwords`
+    - [x] Argon2 `hash passwords`
+    - [x] Uuid `Universally Unique Identifier`
+    - [x] Cookie-parser `Parse Cookie header`
+    - [ ] Prettier `Opinionated Code Formatter`
+    - [x] Commander `Command-line Interfaces` (Optional)
+    - [x] Faker-js `Fake Data for Testing` (Optional)

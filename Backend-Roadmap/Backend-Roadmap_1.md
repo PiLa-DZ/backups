@@ -1,41 +1,18 @@
-# Learn Programming
+# BackEnd Raodmap
 
-## BackEnd Raodmap
-
-- TECH
-  - [x] JavaScript `Programming Language` (Raodmap)
-  - [x] Node.js `JavaScript runtime environment` (Raodmap)
-  - [x] NPM `Node Package Manager`
-  - [x] FNM `Fast Node Manager`
-  - [x] TypeScript `Super set of JavaScript` (Raodmap)
-  - Modules
-    - [x] Express `Web Application Framework`
-    - [x] Prisma `ORM | Object-Relational Mapping & Migrations`
-    - [x] Vitest `Next Generation Testing Framework`
-    - [x] Supertest `HTTP Testing`
-    - [x] Zod `TypeScript-first validation library`
-    - [ ] Winston `Log Records`
-    - [ ] swagger-ui-express `Swagger-ui generated API docs`
-    - [ ] Eslint `patterns found in ECMAScript/JavaScript`
-    - [ ] Redis `Caching`
-    - [ ] Helmet `Content Security Policy`
-    - [ ] CORS `Cross-Origin Resource Sharing`
-    - [x] JWT `JSON Web Woken`
-    - [x] Tsx `TypeScript Execute`
-    - [x] Tsc `Compiler`
-    - [x] Dotenv `loads environment variables`
-    - [x] Bcrypt `hash passwords`
-    - [x] Argon2 `hash passwords`
-    - [x] Uuid `Universally Unique Identifier`
-    - [x] Cookie-parser `Parse Cookie header`
-    - [ ] Prettier `Opinionated Code Formatter`
-    - [x] Commander `Command-line Interfaces` (Optional)
-    - [x] Faker-js `Fake Data for Testing` (Optional)
+## Beginner and Medium BackEnd
 
 - Browser
   - [x] HTML 5 (Basics)
   - [x] CSS 3 (Basics)
   - [x] JavaScript DOM BOM
+
+- Programming Language
+  - [x] JavaScript `Programming Language` (Raodmap)
+  - [x] Node.js `JavaScript runtime environment` (Raodmap)
+  - [x] NPM `Node Package Manager`
+  - [x] FNM `Fast Node Manager`
+  - [x] TypeScript `Super set of JavaScript` (Raodmap)
 
 - [x] Git `Version Control Systems` (Raodmap)
 - [x] GitHub `Repo Hosting Services` (Raodmap)
@@ -169,83 +146,3 @@
   - [ ] Server Sent Events
   - [ ] Web sockets
   - [ ] Long Polling
-
-## Project Requirements
-
-- TECH (technology)
-- Error Handling
-- File Structure
-- API Docs/Schema
-- Logging Strategy
-- Testing Strategy
-- Database (Models & Seeding)
-- Security
-  - Environment variables
-  - Authentication and Authorization
-  - Password Hashing
-  - Data Validation
-
-- MVC | Model-View-Controller (software architectural pattern)
-
-## My Skills
-
-- Networks (Basics)
-  - OSI Model `Open Systems Interconnection Model`
-    - 1: Physical Layer
-    - 2: Data Link Layer
-    - 3: Network Layer | Internet layer
-    - 4: Transport Layer
-    - 5: Session Layer
-    - 6: Presentation Layer
-    - 7: Application Layer
-  - Common Protocols
-    - Application Layer
-      - DNS: `Domain name system`
-      - DHCP `Dynamic Host Configuration Protocol`
-      - FTP `File Transfer Protocol` (!Not Secure)
-      - HTTP `Hypertext Transfer Protocol`
-      - SMTP `Simple Mail Transfer Protocol`
-      - SNMP `Simple Network Management Protocol`
-      - SSH `Secure Shell`
-      - Telnet `Teletype Network` (!Not Secure)
-    - Transport Layer
-      - TCP `Transmission Control Protocol`
-      - UDP `User Datagram Protocol`
-    - Internet Layer
-      - ARP `Address Resolution Protocol`
-      - ICMP `Internet Control Message Protocol`
-      - IP `Internet Protocol`
-  - Common Ports
-    - 21: FTP `File Transfer Protocol` (!Not Secure)
-    - 22: SSH `Secure Shell`
-    - 23: Telnet `Teletype Network` (!Not Secure)
-    - 25: SMTP `Simple Mail Transfer Protocol`
-    - 53: DNS `Domain Name System`
-    - 80: HTTP `Hypertext Transfer Protocol`
-    - 443: HTTPS `Hypertext Transfer Protocol Secure` HTTP over TLS/SSL
-  - Network Topologies
-    - Star Topology: The Modern King `99%`
-    - Ring Topology: The Circular Token Pass
-    - Mesh Topology: The Bulletproof Web
-    - Bus Topology: The Shared Wire (and the Textbook Misdirection)
-    - Hybrid Topology
-    - Global Internet Shape
-
-- Arch Linux
-- Terminal Commands
-
-- PDE | Personalized Development Environment
-  - I3-WM
-  - Tmux
-  - Neovim
-  - Yazi
-  - LazyGit
-
-- Programming Language
-  - Bash Script (Basics)
-  - Python (Basics)
-  - C/C++ (Basics)
-
-## I don't know
-
-- NestJS
